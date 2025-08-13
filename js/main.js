@@ -2,11 +2,7 @@
 // main.js – Fila en espera (pendientes) + registrar
 // ===============================
 
-// 🌐 Config: cambia aquí según el entorno
-// Puedes definir window.API_BASE_OVERRIDE en un <script> antes de cargar este archivo
-const API_BASE =
-  window.API_BASE_OVERRIDE ||
-  'http://localhost:3000'; // desarrollo local
+import { api } from './http.js';
 
 // 📥 Importar función oficial desde registro.js
 import { abrirFormulario } from './registro.js';
