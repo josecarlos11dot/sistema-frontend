@@ -1,5 +1,5 @@
 // pendientes.js
-const API_BASE = 'http://localhost:3000'; // usamos local, Smee ya reenvía
+import { api } from './http.js'; // <— NUEVOs
 
 export async function obtenerPendientes() {
   const res = await fetch(`${API_BASE}/api/pendientes`, { cache: 'no-store' });
